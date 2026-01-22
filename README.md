@@ -169,6 +169,22 @@ Found a bug or want to improve the patch? PRs welcome!
 
 MIT License - See LICENSE file for details
 
+## Experimental: Non-Tool Model Support
+
+We're working on enabling models without native tool support (like `venice-uncensored`) to work as Letta agents! 
+
+**Status:** Proof-of-concept complete ✓
+
+See `TODO_NON_TOOL_MODELS.md` for the full plan and `PROTOTYPE_TOOL_PARSER.py` for a working parser demo.
+
+The approach:
+1. Parse tool calls from model text output
+2. Execute tools and get results
+3. Feed results back via multi-turn conversation
+4. Maintain conversation flow
+
+This is experimental but shows promise! Contributions welcome.
+
 ## Disclaimer
 
 This is an unofficial patch. Use at your own risk. For production use, we recommend waiting for official Venice support in Letta or using our maintained fork.
